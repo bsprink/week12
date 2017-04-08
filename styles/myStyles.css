@@ -1,0 +1,28 @@
+body{
+	background-image: url(../images/curtains.jpg);
+	background-size: contain;
+}
+
+#container{
+	width: 600px;
+	background-color: #ddd;
+	margin-left: auto;
+	margin-right: auto;
+}
+#title{
+	text-align: center;
+	font-size: 50px;
+}
+#titleInput{
+	text-align: center;
+}
+#yearInput{
+	text-align: center;
+}
+#results{
+	width: 600px;
+	height: 800px;
+	background-color: #eee;
+	margin-right: auto;
+	margin-left: auto;
+}
