@@ -6,20 +6,33 @@
 	<link rel="stylesheet" type="text/css" href="styles/myStyles.css">
 </head>
 <body>
+<div ng-app="movieApp" ng-controller="movieCtrl"> 
+
+<p>Here are some Movies</p>
+	<div class="films" ng-repeat="x in movies">
+		<h1>{{x.Title}}</h1>
+		<img src="{{x.Poster}}"/>
+	</div>
+</div>
+
+<script>
+
+</script>
 	<div id="container">
 		<div id="title">Movie Search</div>
 		<hr>
 			<div id="titleInput"><input type="text">
-				<button id="titleButton">By Titile</button>
+				<button ng-click="titleButton()">By Titile</button>
 			</div>
 					<div id="yearInput"><input type="text">
-						<button id="yearButton">By Year</button>
+						<button ng-click="yearButton()s">By Year</button>
 					</div>	
 		<hr>
 		<div id="results"></div>
 
 	</div>
 	<script src="scripts/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	<script src="scripts/myScripts.js"></script>
 </body>
 </html>
